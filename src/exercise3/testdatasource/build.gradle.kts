@@ -1,0 +1,23 @@
+plugins {
+    id("java-library")
+    id("org.jetbrains.kotlin.jvm") version "1.8.20"
+
+
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+repositories {
+    mavenCentral()
+}
+dependencies {
+//    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.20")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")
+
+
+    implementation(project(":data"))
+    implementation(project(":model"))
+}
