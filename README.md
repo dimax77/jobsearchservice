@@ -36,9 +36,7 @@
 - **Kotlin**: Primary language for developing the application.
 - **Ktor**: Framework for building the backend server and handling HTTP requests.
 - **Database**: Integration with a database for storing job listings, company information, and user resumes (can be PostgreSQL, MySQL, or any other supported database).
-- **Exposed**: ORM library used for database interaction (if applicable).
-- **Koin**: Dependency injection framework for Kotlin (optional).
-- **JWT Authentication**: Secure access using JSON Web Tokens for authentication.
+
 
 ## Setup and Installation
 
