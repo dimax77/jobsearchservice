@@ -134,3 +134,25 @@ curl -X POST http://localhost:8080/auth/register \
   "email": "user@example.com",
   "password": "securepassword"
 }'
+```
+
+## Contributing
+
+Contributions are welcome! To contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature-branch
+3. Make your changes and commit them:
+  ```bash
+  git commit -m 'Add new feature'
+```
+4 Push to the branch:
+  ```bash
+  git push origin feature-branch
+```
+5. Open a pull request.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
