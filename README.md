@@ -81,3 +81,56 @@ Once the server is running, you can test the API using tools like Postman or cUR
 - **POST** `/jobs`: Create a new job listing.
 - **PUT** `/jobs/{id}`: Update a job listing by ID.
 - **DELETE** `/jobs/{id}`: Delete a job listing by ID.
+
+### Companies Endpoints
+
+- **GET** `/companies`: Get a list of all companies.
+- **GET** `/companies/{id}`: Get company information by ID.
+- **POST** `/companies`: Create a new company profile.
+- **PUT** `/companies/{id}`: Update company information.
+- **DELETE** `/companies/{id}`: Delete a company profile.
+
+### Resumes Endpoints
+
+- **GET** `/resumes`: Get a list of all resumes.
+- **GET** `/resumes/{id}`: Get a specific resume by ID.
+- **POST** `/resumes`: Create a new resume.
+- **PUT** `/resumes/{id}`: Update an existing resume.
+- **DELETE** `/resumes/{id}`: Delete a resume by ID.
+
+### Authentication Endpoints
+
+- **POST** `/auth/login`: Authenticate users and generate JWT tokens.
+- **POST** `/auth/register`: Register a new user account.
+
+## Usage Examples
+
+### Create a Job Listing (POST /jobs)
+
+```bash
+  curl -X POST http://localhost:8080/jobs \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "Software Engineer",
+    "description": "Develop and maintain software applications",
+    "companyId": 1,
+    "location": "Remote",
+    "salary": "80,000 - 100,000 USD"
+  }'
+
+```
+### Get a List of Jobs (GET /jobs)
+
+```bash
+curl -X GET http://localhost:8080/jobs
+
+```
+### Register a New User (POST /auth/register)
+
+```bash
+curl -X POST http://localhost:8080/auth/register \
+-H "Content-Type: application/json" \
+-d '{
+  "email": "user@example.com",
+  "password": "securepassword"
+}'
