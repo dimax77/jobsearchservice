@@ -53,5 +53,5 @@
 1. Clone the repository:
 
    ```bash
-   git clone git@github.com:yourusername/job-resume-api.git
-   cd job-resume-api
+   git clone git@github.com:dimax77/jobsearchservice.git
+   cd jobsearchservice
