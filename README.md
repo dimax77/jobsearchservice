@@ -55,3 +55,29 @@
    ```bash
    git clone git@github.com:dimax77/jobsearchservice.git
    cd jobsearchservice
+
+### Build and Run the Application:
+
+1. Build the project using Gradle:
+   
+   ```bash
+   ./gradlew build
+
+2. Run the application:
+
+   ``` bash
+   ./gradlew  :server:run
+
+### Testing the API
+
+Once the server is running, you can test the API using tools like Postman or cURL.
+
+## API Endpoints
+
+### Jobs
+
+- **GET** `/jobs`: Get a list of all job listings.
+- **GET** `/jobs/{id}`: Get a specific job listing by ID.
+- **POST** `/jobs`: Create a new job listing.
+- **PUT** `/jobs/{id}`: Update a job listing by ID.
+- **DELETE** `/jobs/{id}`: Delete a job listing by ID.
