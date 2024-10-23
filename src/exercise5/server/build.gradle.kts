@@ -38,7 +38,7 @@ dependencies {
 }
 
 application {
-    mainClass.set("com.mockingb.server.ServerKt")
+    mainClass.set("com.mockingb.server.ApplicationKt")
 }
 
 tasks.register("downloadDependencies") {
